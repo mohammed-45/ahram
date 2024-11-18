@@ -1,0 +1,121 @@
+html {
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: clip;
+}
+body,
+div * {
+  font-family: Poppins !important;
+}
+[dir="rtl"]body,
+[dir="rtl"]div * {
+  font-family: Cairo !important;
+  // @apply font-cairo;
+}
+::-webkit-scrollbar {
+  @apply w-2;
+}
+::-moz-scrollbar {
+  @apply w-2;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #fafafc;
+}
+::-moz-scrollbar-track {
+  background-color: #fafafc;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-primary;
+}
+::-moz-scrollbar-thumb {
+  @apply bg-primary;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
+}
+::-moz-scrollbar-thumb:hover {
+  @apply bg-primary;
+}
+.background-gradient {
+  background: #e94477;
+}
+.text-gradient {
+  background: #e94477;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+// .border-gradient {
+//   border-width: 1px;
+//   border-style: solid;
+//   border-image: #e94477;
+//   border-image-slice: 1;
+// }
+.border-gradient {
+  background: #e94477;
+  padding: 1px;
+  border-radius: 9999px;
+}
+.border-gradient > .content {
+  background: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-clip: padding-box;
+}
+
+[data-aos="fade-start"] [dir="rtl"] {
+  transform: translate3d(-100px, 0, 0); // same as `fade-right`
+}
+[data-aos="fade-start"] {
+  transform: translate3d(100px, 0, 0); // same as `fade-left`
+}
+[data-aos="fade-end"] [dir="rtl"] {
+  transform: translate3d(100px, 0, 0); // same as `fade-left`
+}
+[data-aos="fade-end"] {
+  transform: translate3d(-100px, 0, 0); // same as `fade-right`
+}
+
+.p-image-toolbar {
+  z-index: 100;
+}
+.nuxt-icon svg {
+  margin-bottom: 0 !important;
+  height: auto;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #000;
+  -webkit-background-clip: text !important;
+  background-color: transparent !important;
+}
+.input_wrapper input,.select_wrapper button,
+.input_wrapper textarea {
+  @apply m-0 block w-full rounded-lg resize-none border border-[#B0B0B0] !bg-white px-4 !h-auto !py-4 font-normal text-blackTitle caret-primary focus:border-primary focus:shadow-none focus:outline-none;
+  transition: border 0.3s ease-in-out;
+}
+.phone_wrapper input {
+  @apply m-0 block w-full rounded-lg resize-none border border-[#B0B0B0] bg-white px-4  py-4 font-normal text-blackTitle caret-primary focus:border-primary focus:shadow-none focus:outline-none;
+  transition: border 0.3s ease-in-out;
+}
+.form_wrapper button {
+  @apply h-[64px] w-full bg-primary  text-xl font-bold text-white;
+}
+
+.error {
+  @apply mt-1 border-red-500 text-sm text-red-500;
+}
+
+.overlay {
+  background: #00000080;
+
+  @apply absolute  inset-0 z-[2];
+}

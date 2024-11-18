@@ -1,0 +1,45 @@
+{
+  "name": "leak-detection",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/date-fns": "^1.5.0",
+    "@nuxtjs/i18n": "^8.0.0-beta.12",
+    "@nuxtjs/tailwindcss": "^6.7.0",
+    "@stefanobartoletti/nuxt-social-share": "^1.1.4",
+    "autoprefixer": "^10.4.14",
+    "nuxt": "^3.7.4",
+    "nuxt-aos": "^1.2.5",
+    "nuxt-headlessui": "^1.1.4",
+    "postcss": "^8.4.23",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "sass": "^1.62.1",
+    "tailwindcss": "^3.3.2"
+  },
+  "overrides": {
+    "vue": "latest"
+  },
+  "dependencies": {
+    "@hennge/vue3-pagination": "^1.0.17",
+    "@nuxt/image": "^1.0.0-rc.3",
+    "@pinia/nuxt": "^0.5.1",
+    "@vee-validate/nuxt": "^4.9.5",
+    "@vee-validate/yup": "^4.12.5",
+    "aos": "^2.3.4",
+    "axios": "^1.7.4",
+    "nuxt-icons": "^3.2.1",
+    "nuxt-swiper": "^1.2.2",
+    "pinia": "^2.1.7",
+    "swiper": "^11.1.9",
+    "vue-axios": "^3.5.2",
+    "vue-toastification": "^2.0.0-rc.5",
+    "yup": "^1.1.1"
+  }
+}
