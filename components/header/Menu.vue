@@ -143,13 +143,7 @@
 </template>
 
 <script setup>
-import { useGlobalStore } from "@/stores/global";
-
-const appStore = useGlobalStore();
-
-const settings = computed(() => appStore.settings);
 const localePath = useLocalePath();
-const showLangList = ref(false);
 
 const switchLocalePath = useSwitchLocalePath();
 </script>
