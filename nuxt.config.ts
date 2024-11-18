@@ -7,8 +7,8 @@ export default defineNuxtConfig({
   app: {
     // Start:: Head Configurations //
     head: {
-      title: "شركة إيفاء للمقاولات",
-      link: [{ rel: "icon", type: "image/x-icon", href: "/logo-dark.svg" }],
+      title: "عيادات الأهرام الدولية",
+      link: [{ rel: "icon", type: "image/x-icon", href: "/logo.svg" }],
 
       meta: [
         { charset: "utf-8" },
@@ -20,7 +20,7 @@ export default defineNuxtConfig({
         {
           hid: "description",
           name: "description",
-          content: "شركة إيفاء للمقاولات",
+          content: "عيادات الأهرام الدولية",
         },
       ],
 
