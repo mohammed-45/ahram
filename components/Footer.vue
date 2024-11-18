@@ -1,5 +1,5 @@
 <template>
-  <div  class="footer mt-auto bg-[#090B0E]">
+  <div  class="footer mt-auto bg-[url('/public/footer_bg.jpg')] bg-cover bg-center">
     <div class="container flex items-center justify-center flex-col pb-14 pt-8">
       
       <img

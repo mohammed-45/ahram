@@ -95,13 +95,13 @@
               </TabPanel
             >
             <TabPanel
-              class="tab-content grid mt-12 gap-10 rounded-lg border  border-[#ddd] p-2.5 grid-cols-1 md:grid-cols-2"
+              class="tab-content grid mt-12 gap-x-10 rounded-lg border  border-[#ddd] p-2.5 grid-cols-1 md:grid-cols-2"
               data-aos="fade-in"
               data-aos-duration="1000"
               >
-              <img src="~/assets/images/x-ray-hero.jpg" alt="liver" class="rounded-lg  max-w-[100%]  w-full" >
+              <img src="~/assets/images/x-ray-hero.jpg" alt="liver" class="rounded-lg  max-w-[100%] h-full  w-full" >
               <div class="py-4">
-                <h3 class="text-base mb-6 text-primary sm:text-3xl font-bold">
+                <h3 class="text-base mb-2 md:mb-6 text-primary sm:text-3xl font-bold">
                 
 خدمة الأشعة
               </h3>
@@ -135,13 +135,13 @@
               </TabPanel
             >
             <TabPanel
-              class="tab-content grid mt-12 gap-10 rounded-lg border  border-[#ddd] p-2.5 grid-cols-1 md:grid-cols-2"
+              class="tab-content grid mt-12 gap-x-10 rounded-lg border  border-[#ddd] p-2.5 grid-cols-1 md:grid-cols-2"
               data-aos="fade-in"
               data-aos-duration="1000"
               >
-              <img src="~/assets/images/natural.jpg" alt="liver" class="rounded-lg  max-w-[100%]  w-full" >
+              <img src="~/assets/images/natural.jpg" alt="liver" class="rounded-lg  max-w-[100%]  h-full w-full" >
               <div class="py-4">
-                <h3 class="text-base mb-6 text-primary sm:text-3xl font-bold">
+                <h3 class="text-base mb-2 md:mb-6 text-primary sm:text-3xl font-bold">
                 
 خدمة العلاج الطبيعي
               </h3>
@@ -167,13 +167,13 @@
               </TabPanel
             >
             <TabPanel
-              class="tab-content grid mt-12 gap-10 rounded-lg border  border-[#ddd] p-2.5 grid-cols-1 md:grid-cols-2"
+              class="tab-content grid mt-12 gap-x-10 rounded-lg border  border-[#ddd] p-2.5 grid-cols-1 md:grid-cols-2"
               data-aos="fade-in"
               data-aos-duration="1000"
               >
-              <img src="~/assets/images/chemical.jpeg" alt="liver" class="rounded-lg  max-w-[100%]  w-full" >
+              <img src="~/assets/images/chemical.jpeg" alt="liver" class="rounded-lg  max-w-[100%] h-full w-full" >
               <div class="py-4">
-                <h3 class="text-base mb-6 text-primary sm:text-3xl font-bold">
+                <h3 class="text-base mb-2 md:mb-6 text-primary sm:text-3xl font-bold">
                 
 خدمة التحاليل
               </h3>
