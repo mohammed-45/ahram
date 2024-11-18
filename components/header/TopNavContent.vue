@@ -34,10 +34,7 @@ const localePath = useLocalePath();
 </script>
 
 <style lang="scss" scoped>
-// .router-link-exact-active {
-//   color: #e94477;
-//   @apply relative transition duration-[5000] after:absolute after:-bottom-2 after:right-0 after:h-[2px] after:w-full   after:bg-primary  after:transition-all after:duration-300 after:ease-in-out  after:content-[''];
-// }
+
 .router-link-exact-active {
   color: #e94477;
   @apply relative transition duration-[5000]  after:-bottom-[52px] after:right-1/2 after:h-5 after:w-5 after:translate-x-1/2 after:rounded-full   after:bg-primary  after:transition-all after:duration-500 after:ease-in-out  after:content-[''];
