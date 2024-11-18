@@ -39,18 +39,7 @@
             class="flex h-full flex-col  justify-center space-y-8"
            
           >
-            <!-- <h1
-              v-if="items?.name"
-              class="max-w-[700px] text-3xl font-medium text-white lg:text-4xl xl:text-5xl"
-            >
-              {{ items?.name }}
-            </h1>
-            <p
-              v-if="items?.description"
-              class="max-w-[700px] text-lg font-medium text-white "
-            >
-              {{ items?.description }}
-            </p> -->
+           
             <h1
               class="max-w-[700px] text-3xl font-medium text-white lg:text-4xl xl:text-5xl"
             >
@@ -99,18 +88,7 @@
             class="flex h-full flex-col  justify-center space-y-8"
            
           >
-            <!-- <h1
-              v-if="items?.name"
-              class="max-w-[700px] text-3xl font-medium text-white lg:text-4xl xl:text-5xl"
-            >
-              {{ items?.name }}
-            </h1>
-            <p
-              v-if="items?.description"
-              class="max-w-[700px] text-lg font-medium text-white "
-            >
-              {{ items?.description }}
-            </p> -->
+          
             <h1
               class="max-w-[700px] text-3xl font-medium text-white lg:text-4xl xl:text-5xl"
             >
@@ -159,18 +137,7 @@
             class="flex h-full flex-col  justify-center space-y-8"
            
           >
-            <!-- <h1
-              v-if="items?.name"
-              class="max-w-[700px] text-3xl font-medium text-white lg:text-4xl xl:text-5xl"
-            >
-              {{ items?.name }}
-            </h1>
-            <p
-              v-if="items?.description"
-              class="max-w-[700px] text-lg font-medium text-white "
-            >
-              {{ items?.description }}
-            </p> -->
+          
             <h1
               class="max-w-[700px] text-3xl font-medium text-white lg:text-4xl xl:text-5xl"
             >
@@ -219,18 +186,7 @@
             class="flex h-full flex-col  justify-center space-y-8"
            
           >
-            <!-- <h1
-              v-if="items?.name"
-              class="max-w-[700px] text-3xl font-medium text-white lg:text-4xl xl:text-5xl"
-            >
-              {{ items?.name }}
-            </h1>
-            <p
-              v-if="items?.description"
-              class="max-w-[700px] text-lg font-medium text-white "
-            >
-              {{ items?.description }}
-            </p> -->
+           
             <h1
               class="max-w-[700px] text-3xl font-medium text-white lg:text-4xl xl:text-5xl"
             >
@@ -267,9 +223,7 @@
         </div>
       </SwiperSlide>
     </Swiper>
-    <!-- <div
-      class="container  w-full  z-[555555] flex justify-between  py-8 lg:-translate-x-45"
-    > -->
+   
       <button class="products-next z-[9999] me-2 absolute top-1/2 -translate-y-1/2 end-0 flex items-center justify-center">
         <img
           src="~/assets/images/arrow-left.svg"
@@ -287,7 +241,6 @@
           :class="$i18n.locale === 'ar' ? '' : 'rotate-180'"
         />
       </button>
-    <!-- </div> -->
   </div>
 </template>
 

@@ -1,15 +1,15 @@
 <template>
   <div class="relative my-20">
     <div class="container">
-      <h2
+      <h2 
         class="text-center text-xl font-bold text-secondary sm:text-2xl lg:text-4xl"
       >
         التخصصات
       </h2>
-      <p class="mt-2 text-center text-lg text-subtitle">
+      <p  class="mt-2 text-center text-lg text-subtitle">
         تتميز عياداتنا بعدة تخصصات تجعل تجربة مرضانا فريدة من نوعها
       </p>
-      <div
+      <div 
         class="mt-10 grid grid-cols-1 flex-wrap gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
       >
         <div

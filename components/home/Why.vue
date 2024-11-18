@@ -1,19 +1,19 @@
 <template>
-  <div class="relative mb-20 bg-[#f7f7f7] py-24">
+  <div  class="relative mb-20 bg-[#f7f7f7] py-24 ">
     <div class="absolute -bottom-[50px] end-0 top-0 z-10">
-      <img src="~/assets/images/shape-1.png" alt="Icon" class="opacity-10" />
+      <img src="~/assets/images/shape-1.png"  alt="Icon" class="opacity-10" />
     </div>
-    <div class="container">
+    <div class="container " >
       <div
         class="grid grid-cols-1 flex-wrap gap-10 md:grid-cols-2 lg:grid-cols-3"
       >
         <div class="col-span-1 flex-1 md:col-span-2 lg:col-span-2">
-          <h2 class="text-xl font-bold text-secondary sm:text-2xl lg:text-4xl">
+          <h2  class="text-xl font-bold text-secondary sm:text-2xl lg:text-4xl">
             لماذا عيادات الأهرام الدولية
           </h2>
-          <p class="mt-2 text-lg text-subtitle">
+          <p  class="mt-2 text-lg text-subtitle">
             فريق طبي مؤهل حيث يعمل لدينا نخبه من الاطباء المتخخصينفي جميع المجالات , معتمدون ودو خبره خبره عاليه مما يضمن تقديم رعايه طبيه متخصصه وامنه لكل مريض .    </p>
-          <div class="mt-10 flex flex-col sm:flex-row flex-wrap gap-5">
+          <div  class="mt-10 flex flex-col sm:flex-row flex-wrap gap-5">
             <div class="basis-[45%] flex-1 flex gap-4">
               <h2 class="text-xl font-semibold text-primary sm:text-3xl">01.</h2>
               <h3 class="text-lg font-semibold text-blackTitle sm:text-xl">

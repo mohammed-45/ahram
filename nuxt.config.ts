@@ -115,14 +115,8 @@ export default defineNuxtConfig({
     // https: false,
 
     host: "0.0.0.0",
-    port: 3152,
+    port: 4111,
     // url: "http://0.0.0.0:3005",
-  },
-
-  runtimeConfig: {
-    public: {
-      baseURL: "https://ewcc.phpv8.aait-d.com/api/",
-    },
   },
   build: {
     transpile: ["vue-toastification"],
