@@ -137,6 +137,71 @@
            
           </div>
         </div>
+        <ul class="socials mt-4">
+            <li>
+              <a  target="_blank" rel="noopener">
+                <img
+                  src="~/assets/images/snapchat.svg"
+                  alt="snapchat"
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </li>
+            <li>
+              <a  target="_blank" rel="noopener">
+                <img
+                  src="~/assets/images/youtube.svg"
+                  alt="youtube"
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </li>
+            <li>
+              <a  target="_blank" rel="noopener">
+                <img
+                  src="~/assets/images/linkedin.svg"
+                  alt="linkedin"
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </li>
+            <li>
+              <a  target="_blank" rel="noopener">
+                <img
+                  src="~/assets/images/x.svg"
+                  alt="x"
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ala.hram2024?igsh=MW9ibGk3Ynh0aXM" target="_blank" rel="noopener">
+                <img
+                  src="~/assets/images/insta.svg"
+                  alt="instagram"
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </li>
+            <li>
+              <a  target="_blank" rel="noopener">
+                <img
+                  src="~/assets/images/facebook.svg"
+                  alt="facebook"
+                  width="20"
+                  height="20"
+                />
+              </a>
+            </li>
+            
+          
+           
+          </ul>
       </div>
     </div>
   </div>
@@ -155,6 +220,17 @@ const switchLocalePath = useSwitchLocalePath();
     img {
       @apply h-6 w-6;
     }
+  }
+}
+.socials {
+  @apply flex flex-wrap items-center gap-3 sm:gap-4;
+  li a {
+    @apply relative inline-flex h-8 w-8 cursor-pointer items-center justify-center gap-4 rounded-full border border-primary text-center capitalize text-white transition-all duration-500;
+  }
+  img {
+    @apply h-4 w-4;
+    filter: invert(46%) sepia(89%) saturate(485%) hue-rotate(172deg)
+    brightness(91%) contrast(91%);
   }
 }
 </style>

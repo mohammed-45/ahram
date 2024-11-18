@@ -49,7 +49,7 @@
         </div>
         <img
           class="relative z-[50] col-span-1 lg:h-[400px] w-full lg:w-[400px] md:col-span-2 rounded-[12px] lg:col-span-1"
-          src="~/assets/images/why.jpg"
+          src="~/assets/images/about.jpg"
           alt="why"
         />
       </div>

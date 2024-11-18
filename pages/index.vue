@@ -4,6 +4,7 @@
       <HomeHero />
       <HomeWhy />
       <HomeFeatures />
+      <HomeServices />
     </div>
   </div>
 </template>

@@ -2,7 +2,7 @@
   <div class="fixed top-0 z-[1000] min-h-[50px] lg:container left-0 right-0">
     <nav
       id="mainNavbar"
-      class="  lg:mt-5     w-full  lg:rounded-[12px] bg-white shadow"
+      class="  lg:mt-5     w-full  lg:rounded-[12px] bg-[#f7f7f7] shadow"
     >
     <div class="container items-center justify-between gap-10 flex">
       

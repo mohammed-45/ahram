@@ -10,10 +10,10 @@
         تتميز عياداتنا بعدة تخصصات تجعل تجربة مرضانا فريدة من نوعها
       </p>
       <div 
-        class="mt-10 grid grid-cols-1 flex-wrap gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        class="mt-10 grid grid-cols-1 flex-wrap gap-x-6 sm:gap-y-6 gap-y-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
       >
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div
@@ -61,7 +61,7 @@
           </div>
         </div>
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div
@@ -107,7 +107,7 @@
           </div>
         </div>
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div
@@ -153,7 +153,7 @@
           </div>
         </div>
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div
@@ -202,7 +202,7 @@
           </div>
         </div>
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div
@@ -251,7 +251,7 @@
           </div>
         </div>
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div
@@ -298,7 +298,7 @@
           </div>
         </div>
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div
@@ -344,7 +344,7 @@
           </div>
         </div>
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div
@@ -390,7 +390,7 @@
           </div>
         </div>
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div
@@ -436,7 +436,7 @@
           </div>
         </div>
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div
@@ -482,7 +482,7 @@
           </div>
         </div>
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div
@@ -528,7 +528,7 @@
           </div>
         </div>
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div
@@ -574,7 +574,7 @@
           </div>
         </div>
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div
@@ -620,7 +620,7 @@
           </div>
         </div>
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div
@@ -666,7 +666,7 @@
           </div>
         </div>
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div
@@ -712,7 +712,7 @@
           </div>
         </div>
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div
@@ -758,7 +758,7 @@
           </div>
         </div>
         <div
-          class="group relative col-span-1 overflow-hidden rounded-2xl bg-white p-[30px] transition-transform duration-300"
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
         >
           <!-- Background -->
           <div

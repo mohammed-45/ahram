@@ -41,9 +41,9 @@
           >
            
             <h1
-              class="max-w-[700px] text-3xl font-medium text-white lg:text-4xl xl:text-5xl"
+              class="max-w-[700px] text-3xl font-bold text-white lg:text-4xl xl:text-5xl"
             >
-            عيادات الاهرام الدولية
+            عيادات الأهرام الدولية
             </h1>
             <p class="max-w-[700px] text-lg font-medium text-white">
               عيادات تقدم خدمات طبيه شامله لجميع احتياجتك الصحيه.
@@ -90,9 +90,9 @@
           >
           
             <h1
-              class="max-w-[700px] text-3xl font-medium text-white lg:text-4xl xl:text-5xl"
+              class="max-w-[700px] text-3xl font-bold text-white lg:text-4xl xl:text-5xl"
             >
-            عيادات الاهرام الدولية
+            عيادات الأهرام الدولية
             </h1>
             <p class="max-w-[700px] text-lg font-medium text-white">
               يضم فريقنا نخبه من الاطباء والمتخصصين دوي الخبره والتخصصات المتنوعه
@@ -139,9 +139,9 @@
           >
           
             <h1
-              class="max-w-[700px] text-3xl font-medium text-white lg:text-4xl xl:text-5xl"
+              class="max-w-[700px] text-3xl font-bold text-white lg:text-4xl xl:text-5xl"
             >
-            عيادات الاهرام الدولية
+            عيادات الأهرام الدولية
             </h1>
             <p class="max-w-[700px] text-lg font-medium text-white">
               ملتزمون بتقديم رعاية عاليه الجوده وشامله للمرضي
@@ -164,7 +164,7 @@
             >
               <GeneralButton
                 type="button"
-                class=" !w-[150px] bg-secondary !text-white"
+                class=" !w-[150px] hover:bg-primary bg-secondary !text-white"
                 :text="$t('labels.contact')"
               >
               </GeneralButton>
@@ -188,9 +188,9 @@
           >
            
             <h1
-              class="max-w-[700px] text-3xl font-medium text-white lg:text-4xl xl:text-5xl"
+              class="max-w-[700px] text-3xl font-bold text-white lg:text-4xl xl:text-5xl"
             >
-            عيادات الاهرام الدولية
+            عيادات الأهرام الدولية
             </h1>
             <p class="max-w-[700px] text-lg font-medium text-white">
               مهمتنا هي تحسين جودة حياتكم والارتقاء بصحتكم
@@ -224,7 +224,7 @@
       </SwiperSlide>
     </Swiper>
    
-      <button class="products-next z-[9999] me-2 absolute top-1/2 -translate-y-1/2 end-0 flex items-center justify-center">
+      <button class="products-next z-[9999] hidden me-2 absolute top-1/2 -translate-y-1/2 end-0 sm:flex items-center justify-center">
         <img
           src="~/assets/images/arrow-left.svg"
           alt="arrow"
@@ -233,7 +233,7 @@
         />
       </button>
 
-      <button class="products-prev z-[9999] absolute top-1/2 ms-2 -translate-y-1/2 start-0 flex items-center justify-center">
+      <button class="products-prev z-[9999] absolute top-1/2 ms-2 -translate-y-1/2 start-0 hidden sm:flex items-center justify-center">
         <img
           src="~/assets/images/arrow-right.svg"
           alt="arrow"

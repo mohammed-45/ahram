@@ -7,8 +7,9 @@
         <div class="app_wrapper" id="app_wrapper">
           <slot />
         </div>
+        <WhatsUp  />
       
-        <!-- <Footer class="mt-auto" /> -->
+        <Footer class="mt-auto" />
       </div>
     </Body>
   </Html>
