@@ -362,7 +362,10 @@ import "swiper/css/pagination";
     }
     img {
       min-height: 100%;
-      // object-fit: cover;
+      @media (max-width: 1024px) {
+      object-fit: cover;
+        
+      }
       width: 100%;
       height: 100%;
       min-width: 100%;

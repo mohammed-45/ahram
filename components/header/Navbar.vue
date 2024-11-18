@@ -2,7 +2,7 @@
   <div class="fixed top-0 z-[1000] min-h-[50px] lg:container left-0 right-0">
     <nav
       id="mainNavbar"
-      class="  lg:mt-5     w-full  rounded-[12px] bg-[#e8edf0] shadow"
+      class="  lg:mt-5     w-full  lg:rounded-[12px] bg-white shadow"
     >
     <div class="container items-center justify-between gap-10 flex">
       
@@ -26,11 +26,16 @@
           <div
             class="relative flex cursor-pointer items-center gap-2 text-sm text-blackTitle transition-all duration-500"
           >
-            <img
-              :src="$i18n.locale == 'ar'  ? '~/assets/images/england.png' : '~/assets/images/SAUDI ARABIA.svg'"
-              alt="globe"
-              class="h-6 w-6"
-            />
+          <img v-if="$i18n.locale == 'en'"
+            src="~/assets/images/SAUDI ARABIA.svg"
+            alt="globe"
+            class="h-4 w-6"
+          />
+          <img v-else
+            src="~/assets/images/england.png"
+            alt="globe"
+            class="h-4 w-6"
+          />
             <nuxt-link
                 :to="switchLocalePath($i18n.locale == 'ar' ? 'en' : 'ar')"
                 class="inline-block  "

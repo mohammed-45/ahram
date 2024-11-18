@@ -11,7 +11,7 @@
         </div>
         <!-- <HomeSubscribe class="mt-auto" /> -->
         <!-- <Footer class="mt-auto" v-if="settings" :settings="settings" /> -->
-        <Footer class="mt-auto" />
+        <!-- <Footer class="mt-auto" /> -->
       </div>
     </Body>
   </Html>

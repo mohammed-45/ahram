@@ -44,7 +44,7 @@
           {{ $t("labels.siteDesc") }}
         </p> -->
       </div>
-      <div class="content pt-10">
+      <div class="content ">
         <ul class="flex flex-col gap-4 font-medium text-blackTitle">
           <li>
             <NuxtLink :to="localePath('/')" @click="$emit('close')">
@@ -108,65 +108,35 @@
       >
         <GeneralButton
           type="button"
-          class="hover:bg-opacity-70 !font-medium"
-          :text="$t('labels.downloadApp')"
+          class="hover:bg-opacity-70 !font-medium text-white"
+          :text="$t('labels.contact')"
         >
         </GeneralButton>
       </NuxtLink>
 
-      <div class="flex flex-col mt-6 rounded-[8px] p-2 transition-all duration-500">
-        <div
-          @click="showLangList = !showLangList"
-          class="relative flex cursor-pointer items-center gap-2 text-sm text-blackTitle transition-all duration-500"
-        >
-          <img
-            src="~/assets/images/SAUDI ARABIA.svg"
-            alt="globe"
-            class="h-6 w-6"
-          />
-          {{ $t(`locale.${$i18n.locale}`) }}
-          <img
-            src="~/assets/images/arrow-down.svg"
-            alt="down"
-            class="h-3 w-3 transition-all duration-500"
-            :class="showLangList ? 'rotate-180 ' : ''"
-          />
+      <div class="flex mt-4 flex-col rounded-[8px] p-2 transition-all duration-500">
           <div
-            @click.stop="showLangList = !showLangList"
-            class="invisible absolute top-[40px] start-0 z-[10001] flex min-w-[220px] flex-col shadow-md rounded-lg bg-white py-2 px-4 text-center text-blackTitle opacity-0 transition-all duration-500"
-            :class="showLangList ? '!visible !opacity-100' : ''"
+            class="relative flex cursor-pointer items-center gap-2 text-sm text-blackTitle transition-all duration-500"
           >
-          
-            <div class="flex items-center gap-2 py-2">
-              <img
+          <img v-if="$i18n.locale == 'en'"
             src="~/assets/images/SAUDI ARABIA.svg"
             alt="globe"
-            class="h-8 w-8"
+            class="h-4 w-6"
           />
-              <nuxt-link
-              :to="switchLocalePath($i18n.locale == 'ar' ? 'ar' : 'en')"
-              class="inline-block border-b border-white py-2"
-            >
-              {{ $t(`locale.${$i18n.locale}`) }}
-            </nuxt-link>
-            
-            </div>
-            <div class="flex items-center gap-2 py-2">
-              <img
-            src="~/assets/images/SAUDI ARABIA.svg"
+          <img v-else
+            src="~/assets/images/england.png"
             alt="globe"
-            class="h-8 w-8"
+            class="h-4 w-6"
           />
-              <nuxt-link
-              :to="switchLocalePath($i18n.locale == 'ar' ? 'en' : 'ar')"
-              class="inline-block  "
-            >
-              {{ $i18n.locale == "ar" ? $t(`locale.en`) : $t(`locale.ar`) }}
-            </nuxt-link>
-            </div>
+            <nuxt-link
+                :to="switchLocalePath($i18n.locale == 'ar' ? 'en' : 'ar')"
+                class="inline-block  "
+              >
+                {{ $i18n.locale == "ar" ? $t(`locale.en`) : $t(`locale.ar`) }}
+              </nuxt-link>
+           
           </div>
         </div>
-      </div>
       </div>
     </div>
   </div>
