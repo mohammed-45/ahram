@@ -29,16 +29,10 @@ export default defineNuxtConfig({
       noscript: [],
     },
   },
-  socialShare: {
-    baseUrl: 'https://www.yoursiteurl.com'
-  },
   modules: [
     "@nuxtjs/tailwindcss",
-    "nuxt-icons",
-    "@pinia/nuxt",
     "nuxt-swiper",
     "@nuxt/image",
-    '@stefanobartoletti/nuxt-social-share',
     [
       "@nuxtjs/i18n",
       {
@@ -68,19 +62,7 @@ export default defineNuxtConfig({
         vueI18nLoader: true,
       },
     ],
-    [
-      "@vee-validate/nuxt",
-      {
-        // disable or enable auto imports
-        autoImports: true,
-        // Use different names for components
-        componentNames: {
-          Form: "VeeForm",
-          Field: "VeeField",
-          ErrorMessage: "VeeErrorMessage",
-        },
-      },
-    ],
+    
     "nuxt-aos",
   ],
 

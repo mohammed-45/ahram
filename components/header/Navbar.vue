@@ -83,14 +83,8 @@
 </template>
 <script setup>
 const sidebar = ref(false);
-import { useGlobalStore } from "@/stores/global";
-
-const appStore = useGlobalStore();
-
-const settings = computed(() => appStore.settings);
 
 const switchLocalePath = useSwitchLocalePath();
-const showLangList = ref(false);
 </script>
 
 <style lang="scss">
