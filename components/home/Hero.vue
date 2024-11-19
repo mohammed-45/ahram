@@ -60,7 +60,7 @@
               >
               </GeneralButton>
             </NuxtLink>
-            <NuxtLink
+            <NuxtLink 
               :to="localePath('/contact')"
               class="inline-block  justify-center text-center"
             >

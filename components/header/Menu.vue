@@ -57,50 +57,24 @@
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink :to="localePath('/our-sections')" @click="$emit('close')">
-              {{ $t("NAV.ourSections") }}
+            <NuxtLink :to="localePath('/features')" @click="$emit('close')">
+              {{ $t("NAV.features") }}
             </NuxtLink>
           </li>
 
           <li>
-            <NuxtLink :to="localePath('/business')" @click="$emit('close')">
+            <NuxtLink :to="localePath('/services')" @click="$emit('close')">
               {{ $t("NAV.work") }}
             </NuxtLink>
           </li>
           <li>
             <NuxtLink :to="localePath('/blog')" @click="$emit('close')">
-              {{ $t("NAV.blog") }}
+              {{ $t("NAV.contact") }}
             </NuxtLink>
           </li>
         </ul>
 
-        <!-- <ul class="socials mt-8">
-          <li>
-            <a :href="settings.instgram" target="_blank">
-              <img src="~/assets/images/instagram.svg" alt="instagram" />
-            </a>
-          </li>
-          <li>
-            <a :href="settings.facebook" target="_blank">
-              <img src="~/assets/images/facebook.svg" alt="facebook" />
-            </a>
-          </li>
-          <li>
-            <a :href="settings.linked_in" target="_blank">
-              <img src="~/assets/images/linkedin.svg" alt="linkedin" />
-            </a>
-          </li>
-          <li>
-            <a :href="`${settings.whats_app}`" target="_blank">
-              <img src="~/assets/images/whatsapp.svg" alt="whatsapp" />
-            </a>
-          </li>
-          <li>
-            <a :href="settings.twitter" target="_blank" rel="noopener">
-              <img src="~/assets/images/x.svg" alt="x" />
-            </a>
-          </li>
-        </ul> -->
+        
 
         <NuxtLink
         :to="localePath('/business')"
