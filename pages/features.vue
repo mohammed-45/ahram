@@ -1,20 +1,20 @@
 <template>
     <div>
-        <div class="breadcrumb">
+        <div class="breadcrumb py-[60px] lg:py-[150px] mt-20 lg:mt-0">
             <div class="fixed-bg bg-[url('/public/shape-2.png')]"></div>
             <div class="container relative z-10">
                 <h2
         class="mb-10 text-center text-xl font-bold text-white sm:text-2xl lg:text-4xl"
       >
-        التخصصات
+        {{ $t("NAV.features") }}
       </h2>
       <div class="flex gap-4 justify-center items-center font-semibold text-lg sm:text-2xl">
-        <NuxtLink :to="localePath('/')" class="text-white">الرئيسية </NuxtLink> <span class="text-white">></span>  <span class="text-white underline">التخصصات</span>
+        <NuxtLink :to="localePath('/')" class="text-white">{{ $t("NAV.home") }} </NuxtLink> <span class="text-white">></span>  <span class="text-white underline">{{ $t("NAV.features") }}</span>
       </div>
             </div>
         </div>
         <div class="container">
-            <div 
+          <div 
         class="my-14 grid grid-cols-1 flex-wrap gap-x-6 sm:gap-y-6 gap-y-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
       >
         <div
@@ -22,17 +22,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/teeth.jpg')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/teeth.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
               <img
                 src="~/assets/images/teeth.png"
@@ -41,7 +41,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               01
@@ -51,17 +51,17 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-                الاسنان
+            {{$t("labels.feature1")}}  
+
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-              يعتبر الحفاظ على صحه الفم ضروريا ليس فقط للصحه العامه بل ايضا
-              لجودة حياة افضل حيث يوثر على قدرة تناول الطعام
+            {{$t("labels.featuresDesc1")}}  
             </p>
           </div>
         </div>
@@ -70,17 +70,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/brain.jpg')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/brain.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
               <img
                 src="~/assets/images/brain.png"
@@ -88,7 +88,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               02
@@ -98,16 +98,18 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-                المخ والاعصاب 
+            {{$t("labels.feature2")}}  
+
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-            نركز على الامراض والاصابات التي توثر على الجهاز العصبي ,مما يوثر على وظائف الجسم المختلفه
+            {{$t("labels.featuresDesc2")}}  
+            
             </p>
           </div>
         </div>
@@ -116,17 +118,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/heart.jpg')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/heart.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
               <img
                 src="~/assets/images/heart.png"
@@ -134,7 +136,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               03
@@ -144,16 +146,18 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-                قلب وأوعيه دمويه 
+            {{$t("labels.feature3")}}  
+
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-            برنامج لاعاده تاهيل القلب للمساعده في استعاده النشاط البدني ونمط الحياه الصحي بعد الاصابه بامراض القلب. 
+            {{$t("labels.featuresDesc3")}}  
+
             </p>
           </div>
         </div>
@@ -162,17 +166,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/born.jpg')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/born.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
               <img
                 src="~/assets/images/ovary.png"
@@ -181,7 +185,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               04
@@ -191,17 +195,16 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-                نسا وتوليد 
+            {{$t("labels.feature4")}}  
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-            اجراء الفحوصات الدوريه مثل فحص سرطان عنق الرحم .                     
-مراقبه المخاطر اثناء الحمل والولاده وتقديم الرعايه اثناء المخاض .
+            {{$t("labels.featuresDesc4")}}  
 
             </p>
           </div>
@@ -211,17 +214,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/tumour.webp')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/tumour.webp')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
               <img
                 src="~/assets/images/cancer.png"
@@ -230,7 +233,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               05
@@ -240,18 +243,17 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-            اورام 
+            {{$t("labels.feature5")}}  
+ 
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-            متابعه المرضي بعد العلاج لتقييم فعاليه العلاج واستقرار الحاله الصحيه . 
-تقديم الدعم النفسي والعاطفي للمرضي وعائلاتهم .
-
+            {{$t("labels.featuresDesc5")}}  
             </p>
           </div>
         </div>
@@ -260,17 +262,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/geriatric.jpg')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/geriatric.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
               <img
                 src="~/assets/images/old.png"
@@ -279,7 +281,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               06
@@ -289,17 +291,16 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-            طب المسنين 
+            {{$t("labels.feature6")}}  
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-            رعايه شامله (نفسيه/جسديه/صحيه/اجتماعيه )مع الاخد في الاعتبار التغيرات التي تحدث في الجسم والعقل مع تقدم العمر.
-            </p>
+            {{$t("labels.featuresDesc6")}}              </p>
           </div>
         </div>
         <div
@@ -307,17 +308,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/buety.jpg')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/buety.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
             <img
                 src="~/assets/images/makeup.png"
@@ -326,7 +327,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               07
@@ -336,16 +337,17 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-            تجميل 
+                        {{$t("labels.feature7")}}  
+
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-            يوثر المظهر الخارجي على الصحه النفسيه حيث يمكن لتحسين المظهر يودي الي زياده الثقه بالنفس والشعور بالسعاده.            </p>
+            {{$t("labels.featuresDesc7")}}          </p>
           </div>
         </div>
         <div
@@ -353,17 +355,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/obecity.jpg')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/obecity.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
               <img
                 src="~/assets/images/man.png"
@@ -372,7 +374,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               08
@@ -382,16 +384,16 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-            سمنه ونحافه 
+            {{$t("labels.feature8")}}  
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-            تزيد السمنه من خطر الاصابه بامراض القلب ,السكري من نوع 2 ,ارتفاع ضغط الدم  وبعض انواع السرطان ,بالاضافه الي مشاكل في المفصل .            </p>
+            {{$t("labels.featuresDesc8")}}        </p>
           </div>
         </div>
         <div
@@ -399,17 +401,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/tizm.jpg')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/tizm.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
             <img
                 src="~/assets/images/medical.png"
@@ -418,7 +420,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               09
@@ -428,16 +430,17 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-            الروماتيزم 
+            {{$t("labels.feature9")}}  
+ 
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-            يحدث عندما يتراكم حمض اليوريك في الجسم مما يودي الى نوابات مؤلمه من التهاب المفاصل.           </p>
+            {{$t("labels.featuresDesc9")}}         </p>
           </div>
         </div>
         <div
@@ -445,17 +448,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/masalek.jpg')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/masalek.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
             <img
                 src="~/assets/images/urinary.png"
@@ -464,7 +467,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               10
@@ -474,16 +477,17 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-            المسالك  
+            {{$t("labels.feature10")}}  
+  
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-            نركز على صحه الجهاز التناسلى والبولى ,معالجه الامراض الشائعه مثل التهابات المثانه وحصى المثانه.           </p>
+            {{$t("labels.featuresDesc10")}}       </p>
           </div>
         </div>
         <div
@@ -491,17 +495,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/ramad.jpg')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/ramad.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
             <img
                 src="~/assets/images/eye.png"
@@ -510,7 +514,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               11
@@ -520,16 +524,17 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-            رمد   
+            {{$t("labels.feature11")}}  
+   
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-            يركز على صحه العين والرؤيه ,نعالج المشاكل البصريه التى قد توثر على جوده الحياه.          </p>
+            {{$t("labels.featuresDesc11")}}         </p>
           </div>
         </div>
         <div
@@ -537,17 +542,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/batna.jpg')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/batna.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
             <img
                 src="~/assets/images/batna.png"
@@ -556,7 +561,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               12
@@ -566,16 +571,19 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-            باطنه عامه   
+            {{$t("labels.feature12")}}  
+
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+            
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-            يلعب اطباء الباطنه دور حيويا في تقديم الرعايه الصحيه الشامله ,حيث يقومون بتشخيص وعلاج الامراض المزمنه والحاده.         </p>
+            {{$t("labels.featuresDesc12")}}
+             </p>
           </div>
         </div>
         <div
@@ -583,17 +591,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/ezam.jpg')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/ezam.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
             <img
                 src="~/assets/images/joint.png"
@@ -602,7 +610,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               13
@@ -612,16 +620,18 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-            عظام 
+            {{$t("labels.feature13")}}  
+ 
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-            المشاكل التي تصيب العظام يمكن ان تؤثر بشكل كبير على القدره ,الحركه والنشاط اليومي.</p>
+            {{$t("labels.featuresDesc13")}}
+       </p>
           </div>
         </div>
         <div
@@ -629,17 +639,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/kids.jpg')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/kids.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
             <img
                 src="~/assets/images/kids.png"
@@ -648,7 +658,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               14
@@ -658,16 +668,17 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-            اطفال  
+            {{$t("labels.feature14")}}  
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-            يركز على صحه الاطفال من الولاده حتي المراهقه ,يهتم اطباء الاطفال بتشخيص وعلاج الامراض ورعايه النمو والتطور السليم للطفل.</p>
+            {{$t("labels.featuresDesc14")}}
+         </p>
           </div>
         </div>
         <div
@@ -675,17 +686,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/ears.jpg')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/ears.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
             <img
                 src="~/assets/images/ears.png"
@@ -694,7 +705,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               15
@@ -704,16 +715,16 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-            انف واذن  
+            {{$t("labels.feature15")}}  
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-            يركز على تشخيص وعلاج الحالات المرتبطه بالانف والادن والحنجره بالاضافه الي بعض  مناطق الراس والعنق.</p>
+            {{$t("labels.featuresDesc15")}}</p>
           </div>
         </div>
         <div
@@ -721,17 +732,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/flesh.jpg')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/flesh.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
             <img
                 src="~/assets/images/rash.png"
@@ -740,7 +751,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               16
@@ -750,16 +761,17 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-            جلديه 
+            {{$t("labels.feature16")}}  
+ 
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-            يعتبر الجلد اكبر عضو في الجسم ,ويلعب دور رئيسيا في حمايه الجسم من العوامل الخارجيه ,دلك فان صحه الجلد تعكس صحه عامه .</p>
+            {{$t("labels.featuresDesc16")}}</p>
           </div>
         </div>
         <div
@@ -767,17 +779,17 @@
         >
           <!-- Background -->
           <div
-            class="absolute inset-0 h-full w-full bg-[url('/public/mar.jpg')] bg-cover bg-center opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 group-hover:opacity-100"
+            class="absolute inset-0 h-full w-full bg-[url('/public/mar.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
           ></div>
 
           <div
-            class="absolute -bottom-14 -end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 group-hover:-end-5"
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
           ></div>
 
           <!-- Icon and Index -->
           <div class="relative z-10 flex items-center justify-between">
             <div
-              class="flex h-14 w-14 items-center justify-center rounded-full bg-primary shadow-md transition-all duration-300 group-hover:bg-secondary"
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
             >
             <img
                 src="~/assets/images/gender.png"
@@ -786,7 +798,7 @@
               />
             </div>
             <h3
-              class="text-4xl font-bold text-[#002261] opacity-0 transition-all duration-300 group-hover:opacity-100"
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
               style="-webkit-text-stroke: 1px white"
             >
               17
@@ -796,16 +808,17 @@
           <!-- Title and Subtitle -->
           <div class="relative z-10 mt-4">
             <h3
-              class="mb-2 text-lg font-bold text-blackTitle transition-all duration-300 group-hover:text-white sm:text-2xl"
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
             >
               
-            ذكوره  
+            {{$t("labels.feature17")}}  
               
             </h3>
             <p
-              class="font-semibold text-subtitle transition-all duration-300 group-hover:text-white"
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
             >
-            يركز على الوقايه والتشخيص والعلاج للمشاكل الصحيه التي توثر على الرجال ويعزز الوعى بالصحه العامه والعوامل المؤثره فيها.</p>
+            {{$t("labels.featuresDesc17")}}
+          </p>
           </div>
         </div>
       </div>
@@ -819,7 +832,7 @@
 
 <style lang="scss">
 .breadcrumb {
-    padding: 200px 0;
+    
     position: relative;
     background: linear-gradient(90deg, rgb(30, 113, 190) 0%, rgb(0, 67, 130) 100%);
     text-align: center ;

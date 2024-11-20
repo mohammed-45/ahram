@@ -1,23 +1,23 @@
 <template>
   <div>
-    <div class="breadcrumb">
+    <div class="breadcrumb py-[60px] lg:py-[150px] mt-20 lg:mt-0">
       <div class="fixed-bg bg-[url('/public/shape-2.png')]"></div>
       <div class="container relative z-10">
         <h2
           class="mb-10 text-center text-xl font-bold text-white sm:text-2xl lg:text-4xl"
         >
-          الولادة المائية
+        {{$t("labels.blog1")}}
         </h2>
         <div
           class="flex items-center justify-center gap-4 text-lg font-semibold sm:text-2xl"
         >
           <NuxtLink :to="localePath('/')" class="text-white"
-            >الرئيسية
+            >{{$t("NAV.home")}}
           </NuxtLink>
           <span class="text-white">></span>
-          <NuxtLink :to="localePath('/blogs')" class="text-white underline">معلومات تهمك</NuxtLink>
+          <NuxtLink :to="localePath('/blogs')" class="text-white underline">{{$t("labels.blogs")}}</NuxtLink>
           <span class="text-white">></span>
-          <span class="text-white underline">الولادة المائية</span>
+          <span class="text-white underline">{{$t("labels.blog1")}}</span>
         </div>
       </div>
     </div>
@@ -27,28 +27,22 @@
         alt="blog"
         class="mb-6 w-full rounded-2xl sm:h-[550px]"
       />
-      <h2 class="font-bold text-lg mb-6 sm:text-3xl"> كيفية إجراء الولادة المائية:</h2>
+      <h2 class="font-bold text-lg mb-6 sm:text-3xl"> {{$t("labels.desc20")}}</h2>
       <p class="text-base mb-4 font-semibold text-subtitle sm:text-xl">
-        تجهيز البركة: يتم ملء بركة الماء بماء دافئ (عادة بين 37-38 درجة مئوية) بما يكفي لتغطية بطن الأم وأعلى فخذيها.
-
+        {{$t("labels.desc21")}}
 
       </p>
       <p class="text-base mb-4 font-semibold text-subtitle sm:text-xl">
-        مراقبة الأم والجنين: يجب مراقبة حالة الأم والجنين باستمرار خلال عملية الولادة. يتم قياس ضغط الدم ومعدل ضربات القلب وحرارة الماء بانتظام.
+        {{$t("labels.desc22")}}      </p>
+      <p class="text-base mb-4 font-semibold text-subtitle sm:text-xl">
+       
+        {{$t("labels.desc23")}}
       </p>
       <p class="text-base mb-4 font-semibold text-subtitle sm:text-xl">
        
-الولادة في الماء: عند بدء مراحل الولادة النشطة، تُسمح للأم بالانخراط في الماء لتخفيف الألم وتسهيل الولادة. الأم قد تجلس أو تقف أو تطفو في الماء خلال هذه الفترة.
-
-      </p>
+        {{$t("labels.desc24")}}      </p>
       <p class="text-base mb-4 font-semibold text-subtitle sm:text-xl">
-       
-        قيادة الأمر بالولادة: يقوم القابل أو الطبيب بإرشاد الأم خلال عملية الولادة المائية، ويمكنهم المساعدة في تحريك وضبط وضعية الجسم بشكل صحيح.
-      </p>
-      <p class="text-base mb-4 font-semibold text-subtitle sm:text-xl">
-        استقبال الجنين: بعد ولادة الجنين، يتم رفعه بحذر من الماء ووضعه على صدر
-        الأم. من المهم متابعة حالة الجنين والتأكد من أنه يتنفس ويستجيب بشكل
-        طبيعي.
+        {{$t("labels.desc25")}}
       </p>
     </div>
   </div>
@@ -130,7 +124,7 @@
   }
 }
 .breadcrumb {
-  padding: 200px 0;
+  
   position: relative;
   background: linear-gradient(
     90deg,

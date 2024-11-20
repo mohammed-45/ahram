@@ -1,25 +1,24 @@
 <template>
   <div>
-    <div class="breadcrumb">
+    <div class="breadcrumb py-[60px] lg:py-[150px] mt-20 lg:mt-0">
       <div class="fixed-bg bg-[url('/public/shape-2.png')]"></div>
       <div class="container relative z-10">
         <h2
           class="mb-10 text-center text-xl font-bold text-white sm:text-2xl lg:text-4xl"
         >
-          العناية بالشعر
+        {{$t("labels.blog4")}}
         </h2>
         <div
           class="flex items-center justify-center gap-4 text-lg font-semibold sm:text-2xl"
         >
           <NuxtLink :to="localePath('/')" class="text-white"
-            >الرئيسية
+            >{{$t("NAV.home")}}
           </NuxtLink>
           <span class="text-white">></span>
-          <NuxtLink :to="localePath('/blogs')" class="text-white underline"
-            >معلومات تهمك</NuxtLink
-          >
+          <NuxtLink :to="localePath('/blogs')" class="text-white underline">{{$t("labels.blogs")}}</NuxtLink>
+
           <span class="text-white">></span>
-          <span class="text-white underline">العناية بالشعر </span>
+          <span class="text-white underline">{{$t("labels.blog4")}}</span>
         </div>
       </div>
     </div>
@@ -30,24 +29,20 @@
         class="mb-6 w-full rounded-2xl sm:h-[550px]"
       />
       <h2 class="mb-6 text-lg font-bold sm:text-3xl">
-        بعض النصائح للعناية بالشعر:
-      </h2>
+        {{$t("labels.blog36")}}      </h2>
       <p class="mb-4 text-base font-semibold text-subtitle sm:text-xl">
-        غسيل الشعر بانتظام:* اغسل شعرك بشكل منتظم باستخدام شامبو وبلسم مناسبين لنوع شعرك.
-      </p>
+        {{$t("labels.blog37")}}         </p>
       <p class="mb-4 text-base font-semibold text-subtitle sm:text-xl">
-        تجنب التسريح الزائد:* تجنب تجفيف الشعر بالحرارة المرتفعة بانتظام واستخدام وسائل تصفيف لطيفة.
-      </p>
+        {{$t("labels.blog38")}}         </p>
       <p class="mb-4 text-base font-semibold text-subtitle sm:text-xl">
-        التغذية الجيدة:* تناول الأطعمة الغنية بالفيتامينات والمعادن لتعزيز صحة فروة الرأس ونمو الشعر.
-      </p>
+        {{$t("labels.blog39")}}         </p>
       <p class="mb-4 text-base font-semibold text-subtitle sm:text-xl">
-        تقليل التلوث:* حاول حماية شعرك من التلوث بارتداء قبعة أو استخدام واقيات الشعر.      </p>
+        {{$t("labels.blog40")}}      </p>
       <p class="mb-4 text-base font-semibold text-subtitle sm:text-xl">
-        تقصي الشعر بانتظام:* احرص على قص الشعر بانتظام للحفاظ على نهاياته الصحية والتخلص من التقصف.     </p>
+        {{$t("labels.blog41")}}        </p>
    
       <p class="mb-4 text-base font-semibold text-subtitle sm:text-xl">
-        من خلال اتباع نمط حياة صحي واعتناء منتظم بالبشرة والشعر، يمكنك الحفاظ على مظهر صحي وجميل لفترة طويلة.                                </p>
+        {{$t("labels.blog42")}}      </p>
    
     </div>
   </div>
@@ -129,7 +124,7 @@
   }
 }
 .breadcrumb {
-  padding: 200px 0;
+  
   position: relative;
   background: linear-gradient(
     90deg,

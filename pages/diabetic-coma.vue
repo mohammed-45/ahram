@@ -1,23 +1,23 @@
 <template>
   <div>
-    <div class="breadcrumb">
+    <div class="breadcrumb py-[60px] lg:py-[150px] mt-20 lg:mt-0">
       <div class="fixed-bg bg-[url('/public/shape-2.png')]"></div>
       <div class="container relative z-10">
         <h2
           class="mb-10 text-center text-xl font-bold text-white sm:text-2xl lg:text-4xl"
         >
-          الغيبوبة السكرية
+        {{$t("labels.blog2")}}
         </h2>
         <div
           class="flex items-center justify-center gap-4 text-lg font-semibold sm:text-2xl"
         >
           <NuxtLink :to="localePath('/')" class="text-white"
-            >الرئيسية
+            >{{$t("NAV.home")}}
           </NuxtLink>
           <span class="text-white">></span>
-          <NuxtLink :to="localePath('/blogs')" class="text-white underline">معلومات تهمك</NuxtLink>
+          <NuxtLink :to="localePath('/blogs')" class="text-white underline">{{$t("labels.blogs")}}</NuxtLink>
           <span class="text-white">></span>
-          <span class="text-white underline">الغيبوبة السكرية</span>
+          <span class="text-white underline">{{$t("labels.blog2")}}</span>
         </div>
       </div>
     </div>
@@ -27,22 +27,19 @@
         alt="blog"
         class="mb-6 w-full rounded-2xl sm:h-[550px]"
       />
-      <h2 class="font-bold text-lg mb-6 sm:text-3xl"> بعض النصائح للتعامل مع الغيبوبة السكرية:</h2>
+      <h2 class="font-bold text-lg mb-6 sm:text-3xl"> {{$t("labels.desc26")}}:</h2>
       <p class="text-base mb-4 font-semibold text-subtitle sm:text-xl">
-        هي حالة خطيرة تحدث عندما يكون مستوى السكر في الدم مفرطًا مرتفعًا (فوق 600 ملغ/دل) أو مفرطًا منخفضًا (تحت 70 ملغ/دل)، مما يؤدي إلى فقدان الوعي وفشل الجسم في التحكم في مستوى السكر بشكل صحيح.
-
+        {{$t("labels.desc27")}}
       </p>
       <p class="text-base mb-4 font-semibold text-subtitle sm:text-xl">
-        العناية الطبية الفورية: في حالة الشك بوجود غيبوبة سكرية، يجب الاتصال بفريق الطوارئ على الفور أو نقل المريض إلى أقرب مركز طبي لتلقي العناية الفورية.
-
+        {{$t("labels.desc28")}}
 </p>
       <p class="text-base mb-4 font-semibold text-subtitle sm:text-xl">
        
-        قياس مستوى السكر في الدم: في حالة الشك بوجود غيبوبة سكرية منخفضة، يمكن التحري عند شخص مريض بالسكري عن طريق قياس مستوى السكر في الدم باستخدام جهاز قياس السكر.
-      </p>
+        {{$t("labels.desc29")}}      </p>
       <p class="text-base mb-4 font-semibold text-subtitle sm:text-xl">
        
-        تقديم مصادر سكرية: إذا كانت الغيبوبة تسببت من انخفاض مستوى السكر، يمكن محاولة تناول المريض لمصادر سكرية سريعة مثل عصير الفاكهة، مشروبات غازية غير محلاة أو حبوب الجلوكوز.      </p>
+        {{$t("labels.desc30")}} </p>
      
     </div>
   </div>
@@ -124,7 +121,7 @@
   }
 }
 .breadcrumb {
-  padding: 200px 0;
+  
   position: relative;
   background: linear-gradient(
     90deg,

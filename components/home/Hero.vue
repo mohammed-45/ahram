@@ -43,14 +43,15 @@
             <h1
               class="max-w-[700px] text-3xl font-bold text-white lg:text-4xl xl:text-5xl"
             >
-            عيادات الأهرام الدولية
+            {{$t("labels.ahram")}}
+
             </h1>
             <p class="max-w-[700px] text-lg font-medium text-white">
-              عيادات تقدم خدمات طبيه شامله لجميع احتياجتك الصحيه.
+              {{$t("labels.desc1")}}
             </p>
             <div class="flex items-center gap-4 flex-wrap">
-            <NuxtLink
-              :to="localePath('/about')"
+            <a
+             href="#why"
               class=" inline-block  justify-center text-center"
             >
               <GeneralButton
@@ -59,9 +60,9 @@
                 :text="$t('BUTTONS.showMore')"
               >
               </GeneralButton>
-            </NuxtLink>
-            <NuxtLink 
-              :to="localePath('/contact')"
+            </a>
+            <a 
+              href="https://wa.me/+201205385813"
               class="inline-block  justify-center text-center"
             >
               <GeneralButton
@@ -70,7 +71,7 @@
                 :text="$t('labels.contact')"
               >
               </GeneralButton>
-            </NuxtLink>
+            </a>
            </div>
           </div>
         </div>
@@ -92,14 +93,14 @@
             <h1
               class="max-w-[700px] text-3xl font-bold text-white lg:text-4xl xl:text-5xl"
             >
-            عيادات الأهرام الدولية
+            {{$t("labels.ahram")}}
             </h1>
             <p class="max-w-[700px] text-lg font-medium text-white">
-              يضم فريقنا نخبه من الاطباء والمتخصصين دوي الخبره والتخصصات المتنوعه
+              {{$t("labels.desc2")}}
             </p>
            <div class="flex items-center gap-4 flex-wrap">
-            <NuxtLink
-              :to="localePath('/about')"
+            <a
+             href="#why"
               class=" inline-block  justify-center text-center"
             >
               <GeneralButton
@@ -108,9 +109,9 @@
                 :text="$t('BUTTONS.showMore')"
               >
               </GeneralButton>
-            </NuxtLink>
-            <NuxtLink
-              :to="localePath('/contact')"
+            </a>
+            <a
+              href="https://wa.me/+201205385813"
               class=" inline-block  justify-center text-center"
             >
               <GeneralButton
@@ -119,7 +120,7 @@
                 :text="$t('labels.contact')"
               >
               </GeneralButton>
-            </NuxtLink>
+            </a>
            </div>
           </div>
         </div>
@@ -141,14 +142,15 @@
             <h1
               class="max-w-[700px] text-3xl font-bold text-white lg:text-4xl xl:text-5xl"
             >
-            عيادات الأهرام الدولية
+            {{$t("labels.ahram")}}
+
             </h1>
             <p class="max-w-[700px] text-lg font-medium text-white">
-              ملتزمون بتقديم رعاية عاليه الجوده وشامله للمرضي
+              {{$t("labels.desc3")}}
             </p>
            <div class="flex items-center gap-4 flex-wrap">
-            <NuxtLink
-              :to="localePath('/about')"
+            <a
+             href="#why"
               class=" inline-block  justify-center text-center"
             >
               <GeneralButton
@@ -157,9 +159,9 @@
                 :text="$t('BUTTONS.showMore')"
               >
               </GeneralButton>
-            </NuxtLink>
-            <NuxtLink
-              :to="localePath('/contact')"
+            </a>
+            <a
+              href="https://wa.me/+201205385813"
               class=" inline-block  justify-center text-center"
             >
               <GeneralButton
@@ -168,7 +170,7 @@
                 :text="$t('labels.contact')"
               >
               </GeneralButton>
-            </NuxtLink>
+            </a>
            </div>
           </div>
         </div>
@@ -190,14 +192,15 @@
             <h1
               class="max-w-[700px] text-3xl font-bold text-white lg:text-4xl xl:text-5xl"
             >
-            عيادات الأهرام الدولية
+            {{$t("labels.ahram")}}
+
             </h1>
             <p class="max-w-[700px] text-lg font-medium text-white">
-              مهمتنا هي تحسين جودة حياتكم والارتقاء بصحتكم
+              {{$t("labels.desc4")}}
             </p>
            <div class="flex items-center gap-4 flex-wrap">
-            <NuxtLink
-              :to="localePath('/about')"
+            <a
+             href="#why"
               class=" inline-block  justify-center text-center"
             >
               <GeneralButton
@@ -206,9 +209,9 @@
                 :text="$t('BUTTONS.showMore')"
               >
               </GeneralButton>
-            </NuxtLink>
-            <NuxtLink
-              :to="localePath('/contact')"
+            </a>
+            <a
+              href="https://wa.me/+201205385813"
               class=" inline-block  justify-center text-center"
             >
               <GeneralButton
@@ -217,7 +220,7 @@
                 :text="$t('labels.contact')"
               >
               </GeneralButton>
-            </NuxtLink>
+            </a>
            </div>
           </div>
         </div>

@@ -8,6 +8,7 @@
           <slot />
         </div>
         <WhatsUp  />
+        <Phone  />
       
         <Footer class="mt-auto" />
       </div>

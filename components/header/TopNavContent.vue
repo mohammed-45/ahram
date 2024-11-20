@@ -22,9 +22,14 @@
       </NuxtLink>
     </li>
     <li>
-      <NuxtLink :to="localePath('/contact')">
-        {{ $t("NAV.contact") }}
+      <NuxtLink :to="localePath('/blogs')">
+        {{ $t("NAV.blog") }}
       </NuxtLink>
+    </li>
+    <li>
+      <a href="https://wa.me/+201205385813">
+        {{ $t("NAV.contact") }}
+      </a>
     </li>
   </ul>
 </template>

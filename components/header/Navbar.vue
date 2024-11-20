@@ -1,84 +1,84 @@
 <template>
-  <div class="fixed top-0 z-[1000] min-h-[50px] lg:container left-0 right-0">
+  <div class="fixed left-0 right-0 top-0 z-[1000] min-h-[50px] lg:container">
     <nav
       id="mainNavbar"
-      class="  lg:mt-5     w-full  lg:rounded-[12px] bg-[#f7f7f7] shadow"
+      class="w-full bg-[#f7f7f7] shadow lg:mt-5 lg:rounded-[12px]"
     >
-    <div class="container items-center justify-between gap-10 flex">
-      
-      <NuxtLink :to="localePath('/')" class="outline-none">
-        <img
-          src="~/assets/images/logo.svg"
-          alt="logo"
-          width="140"
-          height="90"
-          loading="lazy"
-          class="h-[80px] sm:aspect-[1/2]  sm:w-[100px]"
-        />
-      </NuxtLink>
-  
-<div class="flex items-center gap-6">
-  <HeaderTopNavContent />
-      <!-- :href="`tel:${settings?.phone}`" -->
-      <div class="hidden items-center justify-center gap-4 text-center lg:flex">
-    
-        <div class="flex flex-col rounded-[8px] p-2 transition-all duration-500">
+      <div class="container flex items-center justify-between gap-10">
+        <NuxtLink :to="localePath('/')" class="outline-none">
+          <img
+            src="~/assets/images/logo.svg"
+            alt="logo"
+            width="140"
+            height="90"
+            loading="lazy"
+            class="h-[80px] sm:aspect-[1/2] sm:w-[100px]"
+          />
+        </NuxtLink>
+
+        <div class="flex items-center gap-6">
+          <HeaderTopNavContent />
+          <!-- :href="`tel:${settings?.phone}`" -->
           <div
-            class="relative flex cursor-pointer items-center gap-2 text-sm text-blackTitle transition-all duration-500"
+            class="hidden items-center justify-center gap-4 text-center lg:flex"
           >
-          <img v-if="$i18n.locale == 'en'"
-            src="~/assets/images/SAUDI ARABIA.svg"
-            alt="globe"
-            class="h-4 w-6"
-          />
-          <img v-else
-            src="~/assets/images/england.png"
-            alt="globe"
-            class="h-4 w-6"
-          />
-            <nuxt-link
-                :to="switchLocalePath($i18n.locale == 'ar' ? 'en' : 'ar')"
-                class="inline-block  "
+            <div
+              class="flex flex-col rounded-[8px] p-2 transition-all duration-500"
+            >
+              <div
+                class="relative flex  items-center gap-2 text-sm text-blackTitle transition-all duration-500"
               >
-                {{ $i18n.locale == "ar" ? $t(`locale.en`) : $t(`locale.ar`) }}
-              </nuxt-link>
-           
+                <img
+                  v-if="$i18n.locale == 'en'"
+                  src="~/assets/images/SAUDI ARABIA.svg"
+                  alt="globe"
+                  class="h-4 w-6"
+                />
+                <img
+                  v-else
+                  src="~/assets/images/england.png"
+                  alt="globe"
+                  class="h-4 w-6"
+                />
+                <nuxt-link
+                  :to="switchLocalePath($i18n.locale == 'ar' ? 'en' : 'ar')"
+                  class="inline-block"
+                >
+                  {{ $i18n.locale == "ar" ? $t(`locale.en`) : $t(`locale.ar`) }}
+                </nuxt-link>
+              </div>
+            </div>
           </div>
         </div>
-  
-      </div>
-</div>
-  
-      <button @click="sidebar = true" class="block cursor-pointer lg:hidden">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="36"
-          height="36"
-          viewBox="0 0 24 24"
-          fill="#e94477"
-          stroke="#e94477"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-menu"
-        >
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-      </button>
-  
-      <teleport custom to="body">
-        <HeaderMenu
-          @close="sidebar = false"
-          :class="sidebar ? 'menu-open' : ''"
-          @click="sidebar = false"
-        />
-      </teleport>
-    </div>
-  
-    </nav>
 
+        <button @click="sidebar = true" class="block cursor-pointer lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+            fill="#e94477"
+            stroke="#e94477"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-menu"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <teleport custom to="body">
+          <HeaderMenu
+            @close="sidebar = false"
+            :class="sidebar ? 'menu-open' : ''"
+            @click="sidebar = false"
+          />
+        </teleport>
+      </div>
+    </nav>
   </div>
 </template>
 <script setup>
@@ -88,7 +88,6 @@ const switchLocalePath = useSwitchLocalePath();
 </script>
 
 <style lang="scss">
-
 .popup-mobile-menu {
   z-index: 9999;
   position: fixed;

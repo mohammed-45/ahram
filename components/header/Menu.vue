@@ -64,20 +64,25 @@
 
           <li>
             <NuxtLink :to="localePath('/services')" @click="$emit('close')">
-              {{ $t("NAV.work") }}
+              {{ $t("NAV.services") }}
             </NuxtLink>
           </li>
           <li>
-            <NuxtLink :to="localePath('/blog')" @click="$emit('close')">
-              {{ $t("NAV.contact") }}
+            <NuxtLink :to="localePath('/blogs')" @click="$emit('close')">
+              {{ $t("NAV.blog") }}
             </NuxtLink>
+          </li>
+          <li>
+            <a href="https://wa.me/+201205385813" @click="$emit('close')">
+              {{ $t("NAV.contact") }}
+            </a>
           </li>
         </ul>
 
         
 
-        <NuxtLink
-        :to="localePath('/business')"
+        <!-- <a
+      href="https://wa.me/+201205385813"
         class="  mt-8 inline-block"
       >
         <GeneralButton
@@ -86,7 +91,7 @@
           :text="$t('labels.contact')"
         >
         </GeneralButton>
-      </NuxtLink>
+      </a> -->
 
       <div class="flex mt-4 flex-col rounded-[8px] p-2 transition-all duration-500">
           <div
@@ -112,46 +117,8 @@
           </div>
         </div>
         <ul class="socials mt-4">
-            <li>
-              <a  target="_blank" rel="noopener">
-                <img
-                  src="~/assets/images/snapchat.svg"
-                  alt="snapchat"
-                  width="20"
-                  height="20"
-                />
-              </a>
-            </li>
-            <li>
-              <a  target="_blank" rel="noopener">
-                <img
-                  src="~/assets/images/youtube.svg"
-                  alt="youtube"
-                  width="20"
-                  height="20"
-                />
-              </a>
-            </li>
-            <li>
-              <a  target="_blank" rel="noopener">
-                <img
-                  src="~/assets/images/linkedin.svg"
-                  alt="linkedin"
-                  width="20"
-                  height="20"
-                />
-              </a>
-            </li>
-            <li>
-              <a  target="_blank" rel="noopener">
-                <img
-                  src="~/assets/images/x.svg"
-                  alt="x"
-                  width="20"
-                  height="20"
-                />
-              </a>
-            </li>
+            
+            
             <li>
               <a href="https://www.instagram.com/ala.hram2024?igsh=MW9ibGk3Ynh0aXM" target="_blank" rel="noopener">
                 <img
@@ -163,7 +130,7 @@
               </a>
             </li>
             <li>
-              <a  target="_blank" rel="noopener">
+              <a href="https://www.facebook.com/profile.php?id=61563856761217&mibextid=ZbWKwL" target="_blank" rel="noopener">
                 <img
                   src="~/assets/images/facebook.svg"
                   alt="facebook"
@@ -192,7 +159,7 @@ const switchLocalePath = useSwitchLocalePath();
   .socials {
     @apply flex flex-wrap items-center gap-4;
     img {
-      @apply h-6 w-6;
+      @apply h-5 w-5;
     }
   }
 }
