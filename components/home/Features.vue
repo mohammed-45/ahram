@@ -816,6 +816,147 @@
           </p>
           </div>
         </div>
+        <div
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
+        >
+          <!-- Background -->
+          <div
+            class="absolute inset-0 h-full w-full bg-[url('/public/blood.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
+          ></div>
+
+          <div
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
+          ></div>
+
+          <!-- Icon and Index -->
+          <div class="relative z-10 flex items-center justify-between">
+            <div
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
+            >
+            <img
+                src="~/assets/images/blood-p.png"
+                 class="w-6 h-6 invert"
+                alt="Service Icon"
+              />
+            </div>
+            <h3
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
+              style="-webkit-text-stroke: 1px white"
+            >
+              18
+            </h3>
+          </div>
+
+          <!-- Title and Subtitle -->
+          <div class="relative z-10 mt-4">
+            <h3
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
+            >
+              
+            {{$t("labels.feature18")}}  
+              
+            </h3>
+            <p
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
+            >
+            {{$t("labels.featuresDesc18")}}
+          </p>
+          </div>
+        </div>
+        <div
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
+        >
+          <!-- Background -->
+          <div
+            class="absolute inset-0 h-full w-full bg-[url('/public/sugar.jpg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
+          ></div>
+
+          <div
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
+          ></div>
+
+          <!-- Icon and Index -->
+          <div class="relative z-10 flex items-center justify-between">
+            <div
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
+            >
+            <img
+                src="~/assets/images/blood.png"
+                 class="w-6 h-6 invert"
+                alt="Service Icon"
+              />
+            </div>
+            <h3
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
+              style="-webkit-text-stroke: 1px white"
+            >
+              19
+            </h3>
+          </div>
+
+          <!-- Title and Subtitle -->
+          <div class="relative z-10 mt-4">
+            <h3
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
+            >
+              
+            {{$t("labels.feature19")}}  
+              
+            </h3>
+            <p
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
+            >
+            {{$t("labels.featuresDesc19")}}
+          </p>
+          </div>
+        </div>
+        <div
+          class="group relative col-span-1 overflow-hidden rounded-2xl bg-[#f7f7f7] p-[30px] transition-transform duration-300"
+        >
+          <!-- Background -->
+          <div
+            class="absolute inset-0 h-full w-full bg-[url('/public/hasas.jpeg')] bg-cover bg-center opacity-100 sm:opacity-0 transition-opacity duration-300 after:absolute after:left-0 after:top-0 after:h-full after:w-full after:bg-[#002261] after:opacity-80 after:transition-all after:duration-300 sm:group-hover:opacity-100"
+          ></div>
+
+          <div
+            class="absolute sm:-bottom-14 sm:-end-14 h-14 w-14 rounded-[50%] bg-secondary transition-all duration-300 group-hover:-bottom-5 -bottom-5 -end-5 sm:group-hover:-end-5"
+          ></div>
+
+          <!-- Icon and Index -->
+          <div class="relative z-10 flex items-center justify-between">
+            <div
+              class="flex h-14 w-14 items-center justify-center rounded-full sm:bg-primary shadow-md transition-all duration-300 bg-secondary sm:group-hover:bg-secondary"
+            >
+            <img
+                src="~/assets/images/hasas.png"
+                 class="w-6 h-6 invert"
+                alt="Service Icon"
+              />
+            </div>
+            <h3
+              class="text-4xl font-bold text-[#002261] opacity-100 sm:opacity-0 transition-all duration-300 sm:group-hover:opacity-100"
+              style="-webkit-text-stroke: 1px white"
+            >
+              20
+            </h3>
+          </div>
+
+          <!-- Title and Subtitle -->
+          <div class="relative z-10 mt-4">
+            <h3
+              class="mb-2 text-lg font-bold text-white sm:text-blackTitle transition-all duration-300 sm:group-hover:text-white sm:text-2xl"
+            >
+              
+            {{$t("labels.feature20")}}  
+              
+            </h3>
+            <p
+              class="font-semibold text-white sm:text-subtitle transition-all duration-300 sm:group-hover:text-white"
+            >
+            {{$t("labels.featuresDesc20")}}
+          </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
