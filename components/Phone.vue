@@ -56,11 +56,11 @@
 }
 
 @media (max-width: 992px) {
-  .floating-button {
+  .phone .floating-button {
     // bottom: 100px;
     width: 50px;
     height: 50px;
-    img {
+    img,svg {
       width: 28px;
       height: 28px;
     }
