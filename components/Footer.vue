@@ -13,54 +13,20 @@
         <h2
         class=" text-center mb-6 text-xl font-bold text-white sm:text-2xl lg:text-3xl"
       >
-      عيادات الأهرام الدولية
+      {{ $t("labels.ahram") }}
       </h2>
       
+      
+      <a href="https://maps.app.goo.gl/mDdXegeaEiUiCBKx6" target="_blank"  class=" text-center mb-6 text-lg text-white">
+      {{ $t("labels.location2") }}
+      </a>
+     
       <p  class=" text-center text-lg text-white">
-        ابقى مطلعا وحافظ على صحتك
-      </p>
+      {{ $t("labels.ahramDesc") }}
 
+      </p>
       <ul class="socials mt-8">
-            <li>
-              <a  target="_blank" rel="noopener">
-                <img
-                  src="~/assets/images/snapchat.svg"
-                  alt="snapchat"
-                  width="20"
-                  height="20"
-                />
-              </a>
-            </li>
-            <li>
-              <a  target="_blank" rel="noopener">
-                <img
-                  src="~/assets/images/youtube.svg"
-                  alt="youtube"
-                  width="20"
-                  height="20"
-                />
-              </a>
-            </li>
-            <li>
-              <a  target="_blank" rel="noopener">
-                <img
-                  src="~/assets/images/linkedin.svg"
-                  alt="linkedin"
-                  width="20"
-                  height="20"
-                />
-              </a>
-            </li>
-            <li>
-              <a  target="_blank" rel="noopener">
-                <img
-                  src="~/assets/images/x.svg"
-                  alt="x"
-                  width="20"
-                  height="20"
-                />
-              </a>
-            </li>
+           
             <li>
               <a href="https://www.instagram.com/ala.hram2024?igsh=MW9ibGk3Ynh0aXM" target="_blank" rel="noopener">
                 <img
@@ -72,7 +38,7 @@
               </a>
             </li>
             <li>
-              <a  target="_blank" rel="noopener">
+              <a href="https://www.facebook.com/profile.php?id=61563856761217&mibextid=ZbWKwL" target="_blank" rel="noopener">
                 <img
                   src="~/assets/images/facebook.svg"
                   alt="facebook"

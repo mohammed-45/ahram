@@ -5,6 +5,7 @@
       <HomeWhy />
       <HomeFeatures />
       <HomeServices />
+      <HomeBlogs />
       <HomeTestemonials />
     </div>
   </div>

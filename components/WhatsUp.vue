@@ -1,5 +1,5 @@
 <template>
-  <a href="wa" target="_blank"
+  <a href="https://wa.me/+201205385813" target="_blank"
     ><div class="floating-button">
       <img src="~/assets/images/whatsapp.png" alt="whatsapp" class="icon wa" />
     </div>
