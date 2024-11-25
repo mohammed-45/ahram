@@ -5,6 +5,7 @@
       <HomeWhy />
       <HomeFeatures />
       <HomeServices />
+      <HomeTestemonials />
     </div>
   </div>
 </template>
